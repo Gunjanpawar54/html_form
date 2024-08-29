@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=s, initial-scale=1.0" />
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <header><h1>Registration-Form</h1></header>
+    <hr />
+
+    <main>
+      <form action="backend.php" method="post">
+        <label for="fullname"><b>Full Name : </b></label>
+        <input type="text" id="fullname" placeholder="Enter your full name" />
+        <br /><br />
+
+        <label for="emailid"><b>Email Id : </b> </label>
+        <input type="text" id="emailid" placeholder="Enter your email id" />
+        <br /><br />
+
+        <label><b>Gender : </b> </label>
+        <input type="radio" name="gender" value="Male" />Male
+        <input type="radio" name="gender" value="Female" />Female
+        <input type="radio" name="gender" value="other" />Other <br /><br />
+
+        <label><b>Select your state : </b></label>
+        <select name="state">
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Madhya Pradesh">Madhya Pradesh</option>
+          <option value="Uttar Pradesh">Uttar Pradesh</option>
+          <option value="Andhra Pradesh">Andhra Pradesh</option>
+        </select>
+        <br /><br />
+
+        <label for="phnumber"><b>Contact Number : </b></label>
+        <input type="number" id="phnumber" />
+        <br /><br />
+
+        <label for="cardnumber"><b>Card Number : </b></label>
+        <input type="number" id="cardnumber" />
+        <br /><br />
+
+        <label for="pd"><b>Password :</b> </label>
+        <input type="password" id="pd" />
+        <br /><br />
+
+        <label><b>Id Proof : </b></label>
+        <input type="checkbox" value="Aadhar card" />Aadhar card
+        <input type="checkbox" value="Pan card" />Pan card
+        <input type="checkbox" value="Voter Id" />Voter Id
+        <input type="checkbox" value="Driving License" />Driving License
+        <br /><br />
+
+        <label for="address"><b>Address : </b></label>
+        <input type="textarea" id="address" />
+        <br /><br />
+
+        <input type="submit" value="Pay" />
+      </form>
+    </main>
+
+    <hr />
+    <footer>
+      <p>Disclaimer : your details we be secured</p>
+    </footer>
+  </body>
+</html>
